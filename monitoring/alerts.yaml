@@ -1,0 +1,4 @@
+# Simple alert policy examples
+freshness_threshold_minutes: 120
+volume_delta_sigma: 3
+notify_email: umu.hawa96@gmail.com

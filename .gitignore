@@ -1,0 +1,67 @@
+# -------------------------
+# Python
+# -------------------------
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pkl
+
+# Virtual environment
+.venv/
+env/
+venv/
+
+# Local settings / secrets
+*.env
+*.env.*
+!*.env.example
+
+# Jupyter / notebooks (if added later)
+.ipynb_checkpoints/
+
+# -------------------------
+# Airflow
+# -------------------------
+airflow_home/airflow.db
+airflow_home/airflow.cfg
+airflow_home/logs/
+airflow_home/plugins/__pycache__/
+
+# Don't ignore DAGs folder itself
+!airflow_home/dags/
+
+# -------------------------
+# Terraform
+# -------------------------
+*.tfstate
+*.tfstate.*
+.terraform/
+.terraform.lock.hcl
+
+# -------------------------
+# Power BI
+# -------------------------
+*.pbix
+*.pbit
+
+# -------------------------
+# OS / Editor
+# -------------------------
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# -------------------------
+# Build / Packaging
+# -------------------------
+dist/
+build/
+*.egg-info/
+
+# -------------------------
+# Misc
+# -------------------------
+logs/
+tmp/
