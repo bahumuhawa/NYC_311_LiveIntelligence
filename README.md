@@ -18,26 +18,28 @@ cp ingestion/.env.example ingestion/.env
 python -m ingestion.fetch_311_data
 ```
 
-Airflow
-export AIRFLOW_HOME=$(pwd)/airflow_home
-export AIRFLOW**CORE**LOAD_EXAMPLES=False
-airflow db init
-airflow webserver -p 8080 # terminal 1
-airflow scheduler # terminal 2
+## Airflow
+- export AIRFLOW_HOME=$(pwd)/airflow_home
+- export AIRFLOW**CORE**LOAD_EXAMPLES=False
+- airflow db init
+- airflow webserver -p 8080 # terminal 1
+- airflow scheduler # terminal 2
 
-**DAG file:** airflow_home/dags/nyc311_ingest_dag.py
-**Fix import error by running:**
-pip install -e .
+**DAG file**
+- airflow_home/dags/nyc311_ingest_dag.py
+  
+**Fix import error by running**
+  - pip install -e .
 
-**Project Structure**
+## Project Structure
 
-airflow_home/ # DAGs, logs, scheduler
-ingestion/ # API client + transforms
-sql/ # DDL, tests, views
-monitoring/ # alerts + runbook
-infrastructure/ # terraform (azure)
-dashboards/ # power bi placeholder
-docs/ # kpis, data dictionary, scope
+- airflow_home/ # DAGs, logs, scheduler
+- ingestion/ # API client + transforms
+- sql/ # DDL, tests, views
+- monitoring/ # alerts + runbook
+- infrastructure/ # terraform (azure)
+- dashboards/ # power bi placeholder
+- docs/ # kpis, data dictionary, scope
 
 **KPIs**
 
