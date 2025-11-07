@@ -1,6 +1,10 @@
-# NYC 311 Live Intelligence
+# NYC 311 Live Intelligence: Real-Time Urban Service Insights
 
-A cloud-based pipeline that ingests NYC 311 service request data, applies data-quality checks, and makes cleaned tables available for reporting dashboards.
+A modern, incremental data pipeline that continuously ingests NYC 311 service requests, runs automated data-quality validation, and publishes clean, analytics-ready tables for operational and public-sector dashboards.
+
+
+![Live 311 Intelligence](docs/Live311.png)
+
 
 ## Quickstart
 
